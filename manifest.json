@@ -4,11 +4,21 @@
   "version": "1.0",
   "description": "嗅探超星/学习通网页中的课件数据包，提取PDF下载链接并显示下载按钮。",
   "permissions": [
-    "scripting"
+    "scripting",
+    "downloads"
   ],
   "host_permissions": [
     "*://*.chaoxing.com/*"
   ],
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "web_accessible_resources": [
     {
       "resources": ["injected_spy.js"],
